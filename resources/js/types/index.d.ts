@@ -40,3 +40,30 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Topic {
+    id: number;
+    title: string;
+    slug: string;
+    user_id: number;
+    created_at: string;
+    updated_at: string;
+    user: User;
+    posts?: Post[];
+}
+
+export interface Post {
+    id: number;
+    content: string;
+    topic_id: number;
+    user_id: number;
+    created_at: string;
+    updated_at: string;
+    user: User;
+    topic?: Topic;
+}
+
+export interface PageProps<T = Record<string, unknown>> extends T {
+    auth: Auth;
+    [key: string]: unknown;
+}
