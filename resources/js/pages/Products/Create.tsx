@@ -40,7 +40,12 @@ export default function Index() {
                         <Terminal className='h-4 w-4' />
                         <AlertTitle>Heads Up!</AlertTitle>
                         <AlertDescription>
-                            You can add components and dependencies to your app using cli.
+                            {/* You can add components and dependencies to your app using cli. */}
+                            <ul>
+                                {Object.entries(errors).map(([field, message]) => (
+                                    <li key={field}>{String(message)}</li>
+                                ))}
+                            </ul>
                         </AlertDescription>
                     </Alert>
                 )}
