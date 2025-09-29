@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
+    background: lightgray;
+}
