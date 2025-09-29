@@ -19,5 +19,7 @@
 @section('title', 'Home Page')
 
 @section('content')
-    <h1>Home Page bla bla eghuefhuwfwqq 32</h1>
+    <home>
+        <h1>Home Page bla bla eghuefhuwfwqq 32</h1>
+    </home>
 @endsection

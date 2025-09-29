@@ -16,8 +16,8 @@
 
 @extends('layout.default-layout')
 
-@section('title', 'COntact Page')
+@section('title', 'Contact Page')
 
 @section('content')
-    <h1>COntact page</h1>
+    <h1>Contact page</h1>
 @endsection
